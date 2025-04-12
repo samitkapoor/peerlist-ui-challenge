@@ -93,13 +93,16 @@ const FluidMenu = () => {
             return (
               <motion.div
                 key={index}
+                style={{
+                  scale: 0.8
+                }}
                 animate={{
                   top: calculatePosition + 'px',
-                  opacity: 1
+                  scale: 1
                 }}
                 exit={{
                   top: '0px',
-                  opacity: 0.2
+                  scale: 0.8
                 }}
                 className="h-[52px] w-[52px] absolute "
               >
