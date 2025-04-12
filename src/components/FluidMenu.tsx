@@ -38,7 +38,7 @@ const MenuButton = ({
   return (
     <button
       onClick={onClick}
-      className={`h-[52px] w-[52px] p-3 !rounded-full !outline-none !border-none !bg-white flex items-center justify-center ${className}`}
+      className={`h-[52px] w-[52px] !p-4 !rounded-full !outline-none !border-none !bg-white flex items-center justify-center ${className}`}
     >
       {option.icon}
     </button>
@@ -99,7 +99,7 @@ const FluidMenu = () => {
                 }}
                 exit={{
                   top: '0px',
-                  opacity: 0
+                  opacity: 0.2
                 }}
                 className="h-[52px] w-[52px] absolute "
               >
