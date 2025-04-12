@@ -38,7 +38,7 @@ const MenuButton = ({
   return (
     <button
       onClick={onClick}
-      className={`h-[52px] w-[52px] !p-4 !rounded-full !outline-none !border-none !bg-white flex items-center justify-center ${className}`}
+      className={`h-[52px] w-[52px] group !p-4 !rounded-full text-black/50 hover:text-black !outline-none !border-none !bg-[#EEECEE] flex items-center justify-center ${className} relative overflow-visible`}
     >
       {option.icon}
     </button>
@@ -49,14 +49,14 @@ const FluidMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="text-black flex flex-col gap-0 relative">
+    <div style={{ filter: 'url(#goo)' }} className="flex flex-col gap-0 relative">
       <AnimatePresence>
         {!isOpen && (
           <motion.div
-            initial={{ filter: 'blur(10px)' }}
+            initial={{ filter: 'blur(2px)' }}
             animate={{ filter: 'blur(0px)' }}
-            exit={{ filter: 'blur(10px)' }}
             className="z-10"
+            key="menu"
           >
             <MenuButton
               onClick={() => setIsOpen(!isOpen)}
@@ -69,10 +69,10 @@ const FluidMenu = () => {
         )}
         {isOpen && (
           <motion.div
-            initial={{ filter: 'blur(10px)' }}
+            initial={{ filter: 'blur(2px)' }}
             animate={{ filter: 'blur(0px)' }}
-            exit={{ filter: 'blur(10px)' }}
             className="z-10"
+            key="close"
           >
             <MenuButton
               onClick={() => setIsOpen(!isOpen)}
