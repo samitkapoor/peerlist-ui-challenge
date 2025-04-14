@@ -10,17 +10,17 @@ interface Option {
 const options: Option[] = [
   {
     id: 1,
-    label: 'Buy groceries',
+    label: 'Create Animated Label',
     completed: false
   },
   {
     id: 2,
-    label: 'Contemplate existence',
-    completed: true
+    label: 'Create Animated Checkbox',
+    completed: false
   },
   {
     id: 3,
-    label: 'Learn SwiftUI',
+    label: 'Submit on Peerlist',
     completed: false
   }
 ];
