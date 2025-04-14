@@ -5,7 +5,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Bento />} />
+        <Route path="*" element={<Bento />} />
       </Routes>
     </BrowserRouter>
   );
