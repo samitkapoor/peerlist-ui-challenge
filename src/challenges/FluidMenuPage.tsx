@@ -2,7 +2,7 @@ import FluidMenu from '../components/FluidMenu';
 
 const FluidMenuPage = () => {
   return (
-    <div className="h-screen w-screen bg-[#FFFDFF] p-5 relative">
+    <div className="h-full w-full p-5 relative">
       <FluidMenu />
       <svg>
         <filter id="goo">

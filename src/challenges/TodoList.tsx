@@ -38,7 +38,12 @@ const TodoList = () => {
   };
 
   return (
-    <div className="flex items-start flex-col justify-start bg-white w-screen h-screen gap-2 p-10">
+    <div
+      style={{
+        background: 'radial-gradient(circle at top right, rgba(0, 200, 83, 0.2), #ffffffED 25%)'
+      }}
+      className="flex items-start flex-col justify-start w-full h-full gap-2 p-5"
+    >
       {selectedItems.map((item) => (
         <AnimatedCheckboxItem key={item.id} item={item} handleSelectItem={handleSelectItem} />
       ))}

@@ -14,7 +14,7 @@ const DynamicStatusIndicator = () => {
   }, [status]);
 
   return (
-    <div className="h-screen w-screen bg-[#FFFDFF] p-5 relative flex flex-col gap-5 items-center justify-center">
+    <div className="h-full w-full relative flex flex-col gap-5 items-center justify-center p-10">
       <DynamicStatus status={statuses[status]} />
     </div>
   );

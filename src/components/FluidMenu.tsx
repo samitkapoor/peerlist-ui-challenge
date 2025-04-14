@@ -49,7 +49,10 @@ const FluidMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div style={{ filter: 'url(#goo)' }} className="flex flex-col gap-0 relative">
+    <div
+      style={{ filter: 'url(#goo)' }}
+      className="flex flex-col items-center justify-center gap-0 relative"
+    >
       <AnimatePresence>
         {!isOpen && (
           <motion.div
@@ -104,7 +107,7 @@ const FluidMenu = () => {
                   top: '0px',
                   scale: 0.8
                 }}
-                className="h-[52px] w-[52px] absolute "
+                className="h-[52px] w-[52px] absolute"
               >
                 <MenuButton option={option} key={option.name} />
               </motion.div>
