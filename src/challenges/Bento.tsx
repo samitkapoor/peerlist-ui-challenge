@@ -3,6 +3,7 @@ import FluidMenuPage from './FluidMenuPage';
 import TodoList from './TodoList';
 import LockedItem from '../components/LockedItem';
 import { ArrowRight } from 'lucide-react';
+import AnimatedToggle from '../components/AnimatedToggle';
 
 const Bento = () => {
   const components = [
@@ -53,7 +54,7 @@ const Bento = () => {
       className: 'col-span-1 md:col-span-4 row-span-2'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Coming Soon',
       children: <LockedItem />,
       className: 'col-span-1 md:col-span-4 row-span-7',
@@ -71,9 +72,9 @@ const Bento = () => {
       )
     },
     {
-      id: 5,
-      title: 'Coming Soon',
-      children: <LockedItem />,
+      id: 4,
+      title: 'Day 4 - Animated Toggles',
+      children: <AnimatedToggle />,
       className: 'col-span-1 md:col-span-5 row-span-6',
       background: (
         <div className="absolute inset-0">
