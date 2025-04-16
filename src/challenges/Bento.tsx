@@ -1,9 +1,9 @@
 import DynamicStatusIndicator from './DynamicStatusIndicator';
 import FluidMenuPage from './FluidMenuPage';
 import TodoList from './TodoList';
-import LockedItem from '../components/LockedItem';
 import { ArrowRight } from 'lucide-react';
 import AnimatedToggle from '../components/AnimatedToggle';
+import SharedLayoutTabs from '../components/SharedLayoutTabs';
 
 const Bento = () => {
   const components = [
@@ -51,31 +51,13 @@ const Bento = () => {
       title: 'Day 3 - Todo List',
       href: 'https://peerlist.io/challenges/ui-animation-challenge?utm_source=left-panel',
       children: <TodoList />,
-      className: 'col-span-1 md:col-span-4 row-span-2'
-    },
-    {
-      id: 5,
-      title: 'Coming Soon',
-      children: <LockedItem />,
-      className: 'col-span-1 md:col-span-4 row-span-7',
-      background: (
-        <div className="absolute inset-0">
-          <div
-            style={{
-              background:
-                'radial-gradient(circle at top right, rgba(0, 200, 83, 0.3), #ffffffED 25%)'
-            }}
-            className="absolute inset-0"
-          ></div>
-          <div className="absolute inset-0 backdrop-blur-xl"></div>
-        </div>
-      )
+      className: 'col-span-1 md:col-span-4 row-span-8'
     },
     {
       id: 4,
       title: 'Day 4 - Animated Toggles',
       children: <AnimatedToggle />,
-      className: 'col-span-1 md:col-span-5 row-span-6',
+      className: 'col-span-1 md:col-span-5 row-span-7',
       background: (
         <div className="absolute inset-0">
           <div
@@ -88,11 +70,33 @@ const Bento = () => {
           <div className="absolute inset-0 backdrop-blur-xl"></div>
         </div>
       )
+    },
+    {
+      id: 5,
+      title: 'Day 5 - Shared Layout Tabs',
+      children: (
+        <div className="h-[350px] flex items-start justify-start ">
+          <SharedLayoutTabs />
+        </div>
+      ),
+      className: 'col-span-1 md:col-span-12 h-[500px]',
+      background: (
+        <div className="absolute inset-0">
+          <div
+            style={{
+              background:
+                'radial-gradient(circle at top right, rgba(0, 200, 83, 0.3), #ffffffED 25%)'
+            }}
+            className="absolute inset-0"
+          ></div>
+          <div className="absolute inset-0 backdrop-blur-xl"></div>
+        </div>
+      )
     }
   ];
 
   return (
-    <div className="min-h-screen w-screen flex items-center justify-center flex-col select-none bg-[#eeeeee] p-5 md:p-10">
+    <div className="min-h-screen w-screen flex items-center justify-center flex-col select-none bg-[#eeeeee] p-5 md:p-10 overflow-x-hidden">
       <div className="flex flex-row items-center text-3xl md:text-7xl text-black font-extrabold py-2 z-10">
         <div className="flex items-center">
           <div
