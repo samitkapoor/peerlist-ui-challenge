@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# peerlist-ui-challenge 🏆
 
-Currently, two official plugins are available:
+Solutions for Peerlist x Aceternity UI challenge.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Stars](https://img.shields.io/github/stars/samitkapoor/peerlist-ui-challenge?style=social)](https://github.com/samitkapoor/peerlist-ui-challenge)
+[![Forks](https://img.shields.io/github/forks/samitkapoor/peerlist-ui-challenge?style=social)](https://github.com/samitkapoor/peerlist-ui-challenge)
+[![Open Issues](https://img.shields.io/github/issues/samitkapoor/peerlist-ui-challenge)](https://github.com/samitkapoor/peerlist-ui-challenge/issues)
 
-## Expanding the ESLint configuration
+![Last Updated](https://img.shields.io/github/last-commit/samitkapoor/peerlist-ui-challenge)
+![Contributors](https://img.shields.io/github/contributors/samitkapoor/peerlist-ui-challenge)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Live Demo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Check out the live demo of the project: [https://courageous-bunny-d56f10.netlify.app/](https://courageous-bunny-d56f10.netlify.app/)
+
+## 📝 About 
+
+This repository contains my solution to the Peerlist x Aceternity UI challenge. The challenge involved recreating a specific UI design based on provided mockups and specifications. This project showcases my ability to translate design specifications into functional and visually appealing user interfaces.
+
+## 💻 Tech Stack
+
+*   **Primary Language:** TypeScript
+*   **Framework:** React
+*   **Styling:** Tailwind CSS
+
+## 🛠️ Installation
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+*   Node.js (v18 or higher)
+*   npm or yarn
+
+### Steps
+
+1.  Clone the repository:
+
+```bash
+git clone https://github.com/samitkapoor/peerlist-ui-challenge.git
+cd peerlist-ui-challenge
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2.  Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install # or yarn install
 ```
+
+3.  Start the development server:
+
+```bash
+npm run dev # or yarn dev
+```
+
+This will start the development server, and you can view the application in your browser at `http://localhost:5173`.
+
